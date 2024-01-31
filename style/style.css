@@ -5,6 +5,8 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  background-image: linear-gradient(to right,  #FFB996 , #FFCF81);
+ 
 }
 
 .container {
@@ -297,4 +299,25 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+}
+.song {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center;
+  align-items: center; /* Center items horizontally */
+  position: fixed;
+  bottom: 40px; /* Adjusted to move it more upwards */
+  width: 100%; /* Full width */
+ /* background-color: #dba934; /* Background color */
+ opacity: 40%;
+   background: linear-gradient(to bottom, rgba(52, 152, 219, 0.8), rgba(52, 152, 219, 0.4)); /* Gradient for glassy effect */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 10px 15px rgba(0, 0, 0, 0.15), 0 20px 30px rgba(0, 0, 0, 0.2);
+
+  transition: background 0.3s; /* Transition for smooth effect */
+}
+
+.song:hover {
+  background: linear-gradient(to bottom, rgba(46, 204, 113, 0.8), rgba(46, 204, 113, 0.4)); /* Change color on hover */
 }

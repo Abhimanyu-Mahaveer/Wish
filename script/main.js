@@ -3,6 +3,8 @@ const animationTimeline = () => {
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
+  const bgMusic = document.getElementById("bgMusic");
+  
 
   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
     .split("")
@@ -262,6 +264,8 @@ const animationTimeline = () => {
       {
         rotation: 90,
       },
+      bgMusic.play(),
+      
       "+=1"
     );
 
